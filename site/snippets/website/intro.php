@@ -10,13 +10,6 @@
 
 		<aside class="intro__aside columns__item columns__item--2 rich-text">
 			<a href="<?= $page->content()->url() ?>"><?= $page->shortUrl() ?></a>
-			<!-- <?php if ($page->date()->isNotEmpty()): ?>
-				<br>
-				<time datetime="<?= $page->date()->toDate('c') ?>"><?= $page->date()->toDate('d.m.y') ?></time>
-				<?php if ($page->modified('d.m.y') !== $page->date()->toDate('d.m.y')): ?>
-					(updated <time datetime="<?= $page->modified('c') ?>"><?= $page->modified('d.m.y') ?></time>)
-				<?php endif ?>
-			<?php endif ?> -->
 		</aside>
 
 	</div>

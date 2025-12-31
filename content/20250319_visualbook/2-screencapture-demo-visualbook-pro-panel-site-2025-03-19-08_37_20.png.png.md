@@ -1,0 +1,1 @@
+Caption: Next to some pages fields using the (link: https://getkirby.com/docs/reference/panel/sections/pages#__cardlets-layout text: cardlets layout), there's a custom import button.

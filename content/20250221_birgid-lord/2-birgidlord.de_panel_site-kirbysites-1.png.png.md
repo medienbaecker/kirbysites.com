@@ -1,0 +1,1 @@
+Caption: Each project shows the number of images in the (link: https://getkirby.com/docs/reference/panel/sections/pages#page-information text: info text) using a query.

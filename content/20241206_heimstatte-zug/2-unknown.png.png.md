@@ -1,0 +1,1 @@
+Caption: Different background colors in page blueprints with the (link: https://getkirby.com/docs/reference/panel/blueprints/page#image-options__back text: image back option).

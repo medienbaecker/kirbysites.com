@@ -1,0 +1,1 @@
+Caption: Using the `help` text for the textarea field to communicate available (link: https://getkirby.com/docs/cookbook/content-structure/use-placeholders text: placeholders).

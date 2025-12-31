@@ -1,0 +1,1 @@
+Caption: The (link: https://plugins.getkirby.com/tobimori/seo text: SEO plugin) is  used to show the title structure of the page. A semantic structure is not only important for search engines but also for accessibility.

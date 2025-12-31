@@ -1,0 +1,21 @@
+# os
+.DS_Store
+
+# vendor files
+/node_modules
+/vendor
+
+# Editors
+# (sensitive workspace files)
+# ---------------------------
+*.sublime-workspace
+/.vscode
+/.idea
+
+# cs fixer
+.php-cs-fixer.cache
+
+# tests
+.phpunit.cache
+/tests/coverage
+/tests/tmp

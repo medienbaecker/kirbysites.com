@@ -1,0 +1,1 @@
+Caption: After a fixed hero, each page features a flexible (link: https://plugins.getkirby.com/medienbaecker/modules text: modules) section. The sections are separated with (link: https://getkirby.com/docs/reference/panel/fields/headline text: headline fields).

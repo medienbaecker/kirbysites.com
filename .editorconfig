@@ -1,0 +1,22 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = tab
+indent_size = 2
+trim_trailing_whitespace = true
+
+[*.php]
+insert_final_newline = true
+
+[site/{snippets,templates}/**.php]
+indent_size = 2
+
+[*.yml]
+indent_style = space
+
+[**.md,**.txt]
+indent_style = space
+intend_size = 2
+trim_trailing_whitespace = false

@@ -1,0 +1,5 @@
+.submit-link {
+	&:active {
+		filter: brightness(0.9);
+	}
+}

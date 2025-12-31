@@ -1,0 +1,17 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.4886 0.304354C24.8037 0.116802 25.1963 0.116801 25.5114 0.304354L45.5114 12.2068C45.8144 12.3871 46 12.7136 46 13.0662V36.9338C46 37.2864 45.8144 37.6129 45.5114 37.7932L25.5114 49.6956C25.1963 49.8832 24.8037 49.8832 24.4886 49.6956L4.48859 37.7931C4.18563 37.6129 4 37.2864 4 36.9338V13.0662C4 12.7136 4.18563 12.3871 4.48859 12.2068L24.4886 0.304354Z" fill="black"/>
+<rect x="13" y="15" width="10" height="8" rx="1" fill="white"/>
+<rect x="13" y="27" width="10" height="8" rx="1" fill="white"/>
+<rect x="27" y="15" width="10" height="8" rx="1" fill="white"/>
+<rect x="27" y="27" width="10" height="8" rx="1" fill="white"/>
+<style>
+  @media (prefers-color-scheme: dark) {
+    path {
+      fill: white;
+    }
+    rect {
+      fill: black;
+    }
+  }
+</style>
+</svg>

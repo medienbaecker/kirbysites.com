@@ -1,0 +1,1 @@
+Caption: Because some artists have sound files and others don't, an emoji is used in the (link: https://getkirby.com/docs/reference/panel/sections/pages#page-information text: info text) to indicate the presence of such a file.

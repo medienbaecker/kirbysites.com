@@ -1,0 +1,1 @@
+Caption: The blocks on this site all use Kirby's drawer to display their fields, making it easy to adjust the structure without having to worry about Vue previews.

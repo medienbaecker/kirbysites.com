@@ -1,0 +1,1 @@
+Caption: Similar to the tab style, the blocks have received gaps through the (link: https://getkirby.com/docs/reference/system/options/panel#custom-panel-css text: custom Panel CSS) file.

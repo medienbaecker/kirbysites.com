@@ -1,0 +1,20 @@
+{
+	"name": "medienbaecker-screenshot",
+	"version": "1.0.0",
+	"description": "Screenshot plugin for Kirby CMS using Puppeteer",
+	"main": "index.php",
+	"scripts": {
+		"install": "npm install puppeteer"
+	},
+	"keywords": [
+		"kirby",
+		"screenshot",
+		"puppeteer",
+		"cms"
+	],
+	"author": "medienbaecker",
+	"license": "MIT",
+	"dependencies": {
+		"puppeteer": "^24.10.0"
+	}
+}

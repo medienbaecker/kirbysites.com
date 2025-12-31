@@ -1,0 +1,16 @@
+:root {
+	--width-max: 1200px;
+	--spacing-flow: 1rem;
+	--spacing-grid: 1rem;
+	--spacing-inline: 3rem;
+	--spacing-block: 3rem;
+	--spacing-block-s: 1rem;
+	--spacing-block-l: 6rem;
+	--border-radius: 0.1rem;
+
+	@media (max-width: 1000px) {
+		--spacing-inline: 1rem;
+		--spacing-block: 2rem;
+		--spacing-block-l: 4rem;
+	}
+}

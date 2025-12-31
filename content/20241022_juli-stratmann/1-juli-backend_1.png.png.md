@@ -1,0 +1,1 @@
+Caption: Making the editors feel at home by greeting them in an (link: https://getkirby.com/docs/reference/panel/sections/info text: info section).

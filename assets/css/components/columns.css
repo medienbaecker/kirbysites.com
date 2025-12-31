@@ -1,0 +1,10 @@
+.columns {
+	display: grid;
+	gap: var(--spacing-block) var(--spacing-inline);
+	@media (min-width: 1000px) {
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	}
+}
+
+.columns__item {
+}

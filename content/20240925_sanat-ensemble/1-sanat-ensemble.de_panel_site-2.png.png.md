@@ -1,0 +1,1 @@
+Caption: Using OG images in the (link: https://getkirby.com/docs/reference/panel/sections/pages text: pages section), editors can immediately see how the page will look like when shared.

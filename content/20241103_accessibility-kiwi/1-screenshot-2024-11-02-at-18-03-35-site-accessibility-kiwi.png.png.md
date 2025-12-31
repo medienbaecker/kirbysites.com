@@ -1,0 +1,1 @@
+Caption: Using the (link: https://getkirby.com/docs/reference/panel/sections/pages#layout text: table layout) of the pages section with (link: https://getkirby.com/docs/reference/plugins/extensions/field-previews text: custom field previews) for status and WCAG level.

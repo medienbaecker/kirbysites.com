@@ -1,0 +1,1 @@
+Alt: Nu Xform homepage with purple gradient background, navigation menu, and bold heading 'Defining and delivering SMaRT building technology'

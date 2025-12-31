@@ -1,0 +1,1 @@
+Caption: The page content is built with flexible (link: https://getkirby.com/docs/reference/panel/fields/blocks text: blocks) that can be used to create any layout.

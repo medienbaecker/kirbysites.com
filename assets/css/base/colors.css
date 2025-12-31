@@ -1,0 +1,19 @@
+:root {
+	--color-primary: #141416;
+	--color-secondary: #f8f8f8;
+	--color-tertiary: #b1b4ba;
+}
+
+@media (prefers-color-scheme: light) {
+	:root:not([data-theme]) {
+		--color-primary: #f8f8f8;
+		--color-secondary: #141416;
+		--color-tertiary: #6b6e74;
+	}
+}
+
+[data-theme="light"] {
+	--color-primary: #f8f8f8;
+	--color-secondary: #141416;
+	--color-tertiary: #6b6e74;
+}

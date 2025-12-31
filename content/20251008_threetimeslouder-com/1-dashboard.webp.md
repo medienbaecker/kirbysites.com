@@ -1,0 +1,1 @@
+Alt: Kirby's dashboard showing a pages section with the cards layout for the pages, a "claim" field, a "global files" section, a "Meta pages" field and a "scripts" for adding custom code to the site.

@@ -1,0 +1,22 @@
+.header {
+	font-weight: bold;
+	margin-block: var(--spacing-block);
+	font-size: var(--font-size-l);
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__buttons {
+	display: flex;
+	gap: 2rem;
+	@media (max-width: 500px) {
+		font-size: var(--font-size-m);
+		gap: 1rem;
+	}
+	@media (max-width: 400px) {
+		gap: 0.5rem;
+	}
+}

@@ -1,0 +1,1 @@
+Caption: Accessibility audits are done completely in Kirby, using the table layout of the (link: https://getkirby.com/docs/reference/panel/sections/pages#layout text: pages section).

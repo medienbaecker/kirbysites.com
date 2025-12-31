@@ -1,0 +1,26 @@
+.theme-toggle__icon {
+	display: flex;
+	transition: opacity 0.2s ease;
+}
+
+.theme-toggle__icon--light {
+	display: none;
+}
+
+[data-theme="light"] .theme-toggle__icon--light {
+	display: flex;
+}
+
+[data-theme="light"] .theme-toggle__icon--dark {
+	display: none;
+}
+
+@media (prefers-color-scheme: light) {
+	:root:not([data-theme]) .theme-toggle__icon--light {
+		display: flex;
+	}
+
+	:root:not([data-theme]) .theme-toggle__icon--dark {
+		display: none;
+	}
+}

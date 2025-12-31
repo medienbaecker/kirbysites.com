@@ -1,0 +1,1 @@
+Caption: Events can be automatically archived by filling in the "Ende" field. In order to not prioritize anyone, the order of people is randomized in the frontend.

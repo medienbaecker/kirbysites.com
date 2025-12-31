@@ -1,0 +1,1 @@
+Caption: The "opening hours" structure field feeds a dynamic open/closed status in the frontend.

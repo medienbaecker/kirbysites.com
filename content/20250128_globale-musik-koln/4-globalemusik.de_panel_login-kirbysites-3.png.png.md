@@ -1,0 +1,1 @@
+Caption: Articles are using the (link: https://getkirby.com/docs/reference/panel/fields/blocks text: blocks field) with the default blocks.

@@ -1,0 +1,5 @@
+.logo {
+	&:active {
+		filter: brightness(0.9);
+	}
+}

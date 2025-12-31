@@ -1,0 +1,30 @@
+.pagination {
+	margin-block: var(--spacing-block);
+	font-size: var(--font-size-m);
+	display: flex;
+	border-block-start: 1px solid
+		color-mix(in srgb, var(--color-secondary), transparent 90%);
+	padding-block-start: var(--spacing-block);
+	gap: var(--spacing-inline);
+}
+
+.pagination__link {
+	color: var(--color-tertiary);
+	transition: all 0.1s var(--ease-1);
+	transition-property: color;
+	white-space: nowrap;
+	min-width: 0;
+	overflow-x: clip;
+	text-overflow: ellipsis;
+	&:hover,
+	&:focus-visible {
+		color: var(--color-secondary);
+	}
+}
+
+.pagination__link--prev {
+}
+
+.pagination__link--next {
+	margin-inline-start: auto;
+}

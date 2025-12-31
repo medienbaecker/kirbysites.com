@@ -1,0 +1,1 @@
+Caption: The pages have dynamic background colors, followed by a hero with some fixed fields and a dynamic (link: https://getkirby.com/docs/reference/panel/fields/blocks text: blocks field) with `preview: fields`.

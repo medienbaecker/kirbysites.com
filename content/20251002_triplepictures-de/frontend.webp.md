@@ -1,0 +1,1 @@
+Alt: Screenshot of triplepictures.de with a fullscreen video background and a centered tp:3 logo in light green.

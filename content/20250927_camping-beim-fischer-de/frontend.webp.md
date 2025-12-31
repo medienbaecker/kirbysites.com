@@ -1,0 +1,1 @@
+Alt: A modern website with a big headline saying "Entdecke dein Lieblingsplatzl am Starnberger See" (Discover your favorite spot at Lake Starnberg), two call to action buttons, and a navigation bar with a fish shaped logo.

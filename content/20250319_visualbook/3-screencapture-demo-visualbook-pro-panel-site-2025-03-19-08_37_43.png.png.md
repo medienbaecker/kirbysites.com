@@ -1,0 +1,1 @@
+Caption: Each file shows a status icon, indicating whether it is being actively used somewhere. A (link: https://getkirby.com/docs/reference/panel/sections/stats text: stats section) in the sidebar shows you how many files are in the library and shows the storage status.

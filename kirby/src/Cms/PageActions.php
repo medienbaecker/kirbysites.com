@@ -455,6 +455,11 @@ trait PageActions
 		// keep the initial storage class
 		$storage = $page->storage()::class;
 
+		// Make sure that the page does not already exist at this point.
+		// Otherwise, moving the storage to memory storage, might delete
+		// an existing page before we can even run the checks.
+		PageRules::create($page);
+
 		// make sure that the temporary page is stored in memory
 		$page->changeStorage(MemoryStorage::class);
 
@@ -498,8 +503,14 @@ trait PageActions
 			'site'   => $this->site(),
 		];
 
-		$modelClass = static::$models[$props['template'] ?? null] ?? static::class;
-		return $modelClass::create($props);
+		if (
+			($template = $props['template'] ?? null) &&
+			($model = static::$models[$template] ?? null)
+		) {
+			return $model::create($props);
+		}
+
+		return static::create($props);
 	}
 
 	/**
@@ -574,13 +585,23 @@ trait PageActions
 			// clear UUID cache
 			$page->uuid()?->clear();
 
+			// Explanation: The two while loops below are only
+			// necessary because our property caches result in
+			// outdated collections when deleting nested pages.
+			// When we use a foreach loop to go through those collections,
+			// we encounter outdated objects. Using a while loop
+			// fixes this issue.
+			//
+			// TODO: We can remove this part as soon
+			// as we move away from our immutable object architecture.
+
 			// delete all files individually
-			foreach ($old->files() as $file) {
+			while ($file = $page->files()->first()) {
 				$file->delete();
 			}
 
 			// delete all children individually
-			foreach ($old->childrenAndDrafts() as $child) {
+			while ($child = $page->childrenAndDrafts()->first()) {
 				$child->delete(true);
 			}
 
@@ -590,10 +611,10 @@ trait PageActions
 			$old->versions()->delete();
 
 			if (
-				$old->isListed() === true &&
-				$old->blueprint()->num() === 'default'
+				$page->isListed() === true &&
+				$page->blueprint()->num() === 'default'
 			) {
-				$old->resortSiblingsAfterUnlisting();
+				$page->resortSiblingsAfterUnlisting();
 			}
 
 			return true;

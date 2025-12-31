@@ -7,8 +7,6 @@ use Kirby\Cms\Html;
 use Kirby\Cms\ModelWithContent;
 use Kirby\Cms\Page;
 use Kirby\Cms\Pages;
-use Kirby\Cms\Plugin;
-use Kirby\Cms\PluginAssets;
 use Kirby\Cms\Response;
 use Kirby\Cms\Site;
 use Kirby\Cms\Url;
@@ -16,6 +14,8 @@ use Kirby\Filesystem\Asset;
 use Kirby\Filesystem\F;
 use Kirby\Http\Router;
 use Kirby\Image\QrCode;
+use Kirby\Plugin\Assets as PluginAssets;
+use Kirby\Plugin\Plugin;
 use Kirby\Template\Slot;
 use Kirby\Template\Snippet;
 use Kirby\Toolkit\Date;
@@ -551,7 +551,7 @@ if (Helpers::hasOverride('t') === false) { // @codeCoverageIgnore
 	 */
 	function t(
 		string|array $key,
-		string|null $fallback = null,
+		string|array|null $fallback = null,
 		string|null $locale = null
 	): string|array|Closure|null {
 		return I18n::translate($key, $fallback, $locale);

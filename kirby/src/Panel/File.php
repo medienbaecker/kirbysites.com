@@ -196,13 +196,14 @@ class File extends Model
 	 * Returns the setup for a dropdown option
 	 * which is used in the changes dropdown
 	 * for example
+	 *
+	 * @deprecated 5.1.4 Use the Kirby\Panel\Ui\Item\FileItem class instead
 	 */
 	public function dropdownOption(): array
 	{
-		return [
-			'icon' => 'image',
-			'text' => $this->model->filename(),
-		] + parent::dropdownOption();
+		return (new FileItem(file: $this->model))->props() + [
+			'icon' => 'image'
+		];
 	}
 
 	/**
@@ -229,10 +230,17 @@ class File extends Model
 			'xlsx'  => 'green-500',
 		];
 
-		return
-			$extensions[$this->model->extension()] ??
-			$types[$this->model->type()] ??
-			parent::imageDefaults()['color'];
+		if ($color = $extensions[$this->model->extension()] ?? null) {
+			return $color;
+		}
+
+		$type = $this->model->type();
+
+		if ($type && ($color = $types[$type] ?? null)) {
+			return $color;
+		}
+
+		return parent::imageDefaults()['color'];
 	}
 
 	/**
@@ -272,10 +280,17 @@ class File extends Model
 			'xlsx'  => 'table',
 		];
 
-		return
-			$extensions[$this->model->extension()] ??
-			$types[$this->model->type()] ??
-			'file';
+		if ($icon = $extensions[$this->model->extension()] ?? null) {
+			return $icon;
+		}
+
+		$type = $this->model->type();
+
+		if ($type && ($icon = $types[$type] ?? null)) {
+			return $icon;
+		}
+
+		return 'file';
 	}
 
 	/**

@@ -16,7 +16,7 @@ async function takeScreenshot() {
 		const quality = parseInt(process.argv[5]) || 85;
 		const width = parseInt(process.argv[6]) || 1920;
 		const height = parseInt(process.argv[7]) || 1080;
-		const format = process.argv[8] || 'png';
+		const format = process.argv[8] || "png";
 
 		// Validate arguments
 		if (!url || !filepath) {
@@ -87,7 +87,7 @@ async function takeScreenshot() {
 		};
 
 		// Add quality option for JPEG and WebP formats
-		if (format === 'jpeg' || format === 'webp') {
+		if (format === "jpeg" || format === "webp") {
 			screenshotOptions.quality = quality;
 		}
 
@@ -189,157 +189,6 @@ async function removeCookieBanners(page) {
 		if (removedCount > 0) {
 			console.log(`Removed ${removedCount} cookie banner elements`);
 		}
-	});
-}
-
-/**
- * Extract colors from the rendered page
- */
-async function extractColorsFromPage(page) {
-	return await page.evaluate(() => {
-		const colors = new Map();
-
-		// Helper function to convert RGB to hex
-		function rgbToHex(r, g, b) {
-			return (
-				"#" +
-				[r, g, b]
-					.map((x) => {
-						const hex = x.toString(16);
-						return hex.length === 1 ? "0" + hex : hex;
-					})
-					.join("")
-			);
-		}
-
-		// Helper function to parse color values
-		function parseColor(colorStr) {
-			if (!colorStr || colorStr === "transparent" || colorStr === "none")
-				return null;
-
-			// Handle hex colors
-			if (colorStr.startsWith("#")) {
-				return colorStr.toLowerCase();
-			}
-
-			// Handle rgb/rgba colors
-			const rgbMatch = colorStr.match(
-				/rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)/
-			);
-			if (rgbMatch) {
-				const [, r, g, b, a] = rgbMatch;
-				// Skip transparent colors
-				if (a !== undefined && parseFloat(a) < 0.1) return null;
-				return rgbToHex(parseInt(r), parseInt(g), parseInt(b));
-			}
-
-			// Handle named colors by creating a temporary element
-			const tempEl = document.createElement("div");
-			tempEl.style.color = colorStr;
-			document.body.appendChild(tempEl);
-			const computed = window.getComputedStyle(tempEl).color;
-			document.body.removeChild(tempEl);
-
-			const namedRgbMatch = computed.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
-			if (namedRgbMatch) {
-				const [, r, g, b] = namedRgbMatch;
-				return rgbToHex(parseInt(r), parseInt(g), parseInt(b));
-			}
-
-			return null;
-		}
-
-		// Helper function to check if color is valid (not too light/dark/gray)
-		function isValidColor(hex) {
-			if (!hex || hex === "#000000" || hex === "#ffffff") return false;
-
-			const r = parseInt(hex.slice(1, 3), 16);
-			const g = parseInt(hex.slice(3, 5), 16);
-			const b = parseInt(hex.slice(5, 7), 16);
-
-			const brightness = (r + g + b) / 3;
-			const contrast = Math.max(r, g, b) - Math.min(r, g, b);
-
-			// Filter out colors that are too light, dark, or have low contrast
-			return brightness >= 30 && brightness <= 220 && contrast >= 30;
-		}
-
-		// Get all visible elements in the viewport
-		const elements = document.querySelectorAll("*");
-
-		elements.forEach((element) => {
-			const rect = element.getBoundingClientRect();
-			const isVisible =
-				rect.width > 0 &&
-				rect.height > 0 &&
-				rect.top < window.innerHeight &&
-				rect.bottom > 0 &&
-				rect.left < window.innerWidth &&
-				rect.right > 0;
-
-			if (!isVisible) return;
-
-			const styles = window.getComputedStyle(element);
-
-			// Extract background colors
-			const bgColor = parseColor(styles.backgroundColor);
-			if (bgColor && isValidColor(bgColor)) {
-				colors.set(
-					bgColor,
-					(colors.get(bgColor) || 0) + rect.width * rect.height
-				);
-			}
-
-			// Extract text colors
-			const textColor = parseColor(styles.color);
-			if (textColor && isValidColor(textColor)) {
-				colors.set(
-					textColor,
-					(colors.get(textColor) || 0) + rect.width * rect.height * 0.5
-				);
-			}
-
-			// Extract border colors
-			[
-				"borderTopColor",
-				"borderRightColor",
-				"borderBottomColor",
-				"borderLeftColor",
-			].forEach((prop) => {
-				const borderColor = parseColor(styles[prop]);
-				if (borderColor && isValidColor(borderColor)) {
-					colors.set(
-						borderColor,
-						(colors.get(borderColor) || 0) + rect.width * rect.height * 0.2
-					);
-				}
-			});
-
-			// Extract box-shadow colors
-			const boxShadow = styles.boxShadow;
-			if (boxShadow && boxShadow !== "none") {
-				const shadowColorMatch = boxShadow.match(/rgba?\([^)]+\)/g);
-				if (shadowColorMatch) {
-					shadowColorMatch.forEach((shadowColor) => {
-						const color = parseColor(shadowColor);
-						if (color && isValidColor(color)) {
-							colors.set(
-								color,
-								(colors.get(color) || 0) + rect.width * rect.height * 0.1
-							);
-						}
-					});
-				}
-			}
-		});
-
-		// Sort colors by frequency/importance and return top 5
-		const sortedColors = Array.from(colors.entries())
-			.sort((a, b) => b[1] - a[1])
-			.slice(0, 5)
-			.map(([color]) => color);
-
-		return sortedColors;
 	});
 }
 

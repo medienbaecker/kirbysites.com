@@ -714,6 +714,10 @@ class Inline
                 switch (true) {
                     case ctype_digit($scalar):
                     case '-' === $scalar[0] && ctype_digit(substr($scalar, 1)):
+                        if ($scalar < \PHP_INT_MIN || \PHP_INT_MAX < $scalar) {
+                            return $scalar;
+                        }
+
                         $cast = (int) $scalar;
 
                         return ($scalar === (string) $cast) ? $cast : $scalar;
@@ -829,19 +833,19 @@ class Inline
     private static function getTimestampRegex(): string
     {
         return <<<EOF
-        ~^
-        (?P<year>[0-9][0-9][0-9][0-9])
-        -(?P<month>[0-9][0-9]?)
-        -(?P<day>[0-9][0-9]?)
-        (?:(?:[Tt]|[ \t]+)
-        (?P<hour>[0-9][0-9]?)
-        :(?P<minute>[0-9][0-9])
-        :(?P<second>[0-9][0-9])
-        (?:\.(?P<fraction>[0-9]*))?
-        (?:[ \t]*(?P<tz>Z|(?P<tz_sign>[-+])(?P<tz_hour>[0-9][0-9]?)
-        (?::(?P<tz_minute>[0-9][0-9]))?))?)?
-        $~x
-EOF;
+                    ~^
+                    (?P<year>[0-9][0-9][0-9][0-9])
+                    -(?P<month>[0-9][0-9]?)
+                    -(?P<day>[0-9][0-9]?)
+                    (?:(?:[Tt]|[ \t]+)
+                    (?P<hour>[0-9][0-9]?)
+                    :(?P<minute>[0-9][0-9])
+                    :(?P<second>[0-9][0-9])
+                    (?:\.(?P<fraction>[0-9]*))?
+                    (?:[ \t]*(?P<tz>Z|(?P<tz_sign>[-+])(?P<tz_hour>[0-9][0-9]?)
+                    (?::(?P<tz_minute>[0-9][0-9]))?))?)?
+                    $~x
+            EOF;
     }
 
     /**

@@ -1,4 +1,4 @@
-# Kirbysites
+# [Kirbysites](https://kirbysites.com)
 
 A showcase of websites built with [Kirby](https://getkirby.com).
 

@@ -1,0 +1,42 @@
+.submit-dialog {
+	margin: auto;
+	max-width: 30rem;
+	padding: 2rem;
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+	border: none;
+	border-radius: var(--border-radius);
+	font-size: var(--font-size-l);
+
+	&::backdrop {
+		background-color: color-mix(in srgb, var(--color-primary), transparent 20%);
+		backdrop-filter: blur(10px);
+	}
+}
+
+.submit-dialog__header {
+	display: flex;
+	align-items: center;
+	margin-block-end: 1.5rem;
+}
+
+.submit-dialog__title {
+	font-weight: bold;
+}
+
+.submit-dialog__text {
+	font-size: var(--font-size-m);
+}
+
+.submit-dialog__close {
+	margin-inline-start: auto;
+	border-radius: 100%;
+	&:active {
+		filter: brightness(0.9);
+	}
+}
+
+.submit-dialog__close-icon {
+	width: 1lh;
+	height: 1lh;
+}

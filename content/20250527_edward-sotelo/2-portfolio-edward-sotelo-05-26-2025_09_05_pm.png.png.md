@@ -1,0 +1,1 @@
+Caption: The "Indexing forbidden" view button comes from the (link: https://plugins.getkirby.com/tobimori/seo text: SEO plugin).

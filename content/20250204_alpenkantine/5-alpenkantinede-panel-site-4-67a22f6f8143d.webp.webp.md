@@ -1,0 +1,1 @@
+Caption: This view shows the (link: https://plugins.getkirby.com/tobimori/dreamform text: DreamForm plugin) in action, allowing users to create and manage forms directly from the panel.

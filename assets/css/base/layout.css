@@ -1,0 +1,39 @@
+/* -------------------------------------------------- */
+/* 📦 Wrapper */
+/* -------------------------------------------------- */
+
+.wrap {
+	padding-inline: var(--spacing-inline);
+}
+
+/* -------------------------------------------------- */
+/* 🔲 Inner Container */
+/* -------------------------------------------------- */
+
+.inner {
+	width: 100%;
+	max-width: var(--width-max);
+	margin: 0 auto;
+}
+
+/* -------------------------------------------------- */
+/* 📏 Grid System */
+/* -------------------------------------------------- */
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: var(--spacing-grid);
+}
+
+/* -------------------------------------------------- */
+/* 🌅 Horizontal rules */
+/* -------------------------------------------------- */
+
+hr {
+	margin-block: calc(var(--spacing-flow) * 2);
+	height: 1px;
+	border: none;
+	background-color: currentColor;
+	opacity: 0.25;
+}

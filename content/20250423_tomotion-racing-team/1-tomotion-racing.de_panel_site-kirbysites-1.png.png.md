@@ -1,0 +1,1 @@
+Caption: The pages section in the dashboard shows the OG image of each page.

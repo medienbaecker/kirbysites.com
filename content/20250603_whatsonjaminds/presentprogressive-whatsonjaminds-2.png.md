@@ -1,0 +1,1 @@
+Caption: The hero is separated by using an (link: https://getkirby.com/docs/reference/panel/fields/object text: object field), opening its fields in the drawer.

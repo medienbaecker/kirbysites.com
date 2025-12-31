@@ -1,0 +1,1 @@
+Alt: The "Home" page in the Panel, showing a blocks field with a text and projects block, and a sidebar with several settings using files, select and color fields.

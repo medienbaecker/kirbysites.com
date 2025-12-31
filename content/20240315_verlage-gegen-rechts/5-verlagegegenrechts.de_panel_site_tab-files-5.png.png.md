@@ -1,0 +1,1 @@
+Caption: Each page is structured in the same way: an intro, a template-specific section, and a free content area using the (link: https://getkirby.com/docs/reference/panel/fields/blocks text: blocks field).

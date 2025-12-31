@@ -1,0 +1,1 @@
+Caption: Jiří uses (link: https://getkirby.com/docs/reference/system/options/panel/panel-menu text: `panel.menu`) to customize the menu, using it for shortcuts to specific pages.

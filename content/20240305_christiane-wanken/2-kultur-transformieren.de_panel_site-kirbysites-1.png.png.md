@@ -1,0 +1,1 @@
+Caption: The home page is completely flexible with many different custom (link: https://getkirby.com/docs/reference/panel/fields/blocks text: blocks) using `preview: fields`.

@@ -1,0 +1,12 @@
+{
+	"require": {
+		"getkirby/cms": "^5.0.0",
+		"getkirby/cli": "^1.6"
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"allow-plugins": {
+			"getkirby/composer-installer": true
+		}
+	}
+}

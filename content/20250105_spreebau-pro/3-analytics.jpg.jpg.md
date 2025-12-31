@@ -1,0 +1,1 @@
+Caption: The "Analytics" tab in the dashboard shows the (link: https://plugins.getkirby.com/sylvainjule/matomo text: Matomo plugin) in action, providing insights into site traffic and user behavior.

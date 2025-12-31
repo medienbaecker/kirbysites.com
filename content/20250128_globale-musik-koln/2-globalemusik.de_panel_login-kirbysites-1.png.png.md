@@ -1,0 +1,1 @@
+Caption: Each page has a fixed hero with a flexible (link: https://plugins.getkirby.com/medienbaecker/modules text: modules section) underneath.

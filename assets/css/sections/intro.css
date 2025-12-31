@@ -1,0 +1,11 @@
+.intro {
+	margin-block: var(--spacing-block);
+	font-size: var(--font-size-m);
+	color: var(--color-tertiary);
+}
+
+.intro__aside {
+	@media (min-width: 1000px) {
+		text-align: end;
+	}
+}

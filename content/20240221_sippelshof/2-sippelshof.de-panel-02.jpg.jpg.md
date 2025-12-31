@@ -1,0 +1,1 @@
+Caption: Sylvain Julé's (link: https://plugins.getkirby.com/sylvainjule/annotator text: Annotator plugin) is used to add markers to a map.

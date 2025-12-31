@@ -1,0 +1,1 @@
+Caption: Flexible content structure with the (link: https://getkirby.com/docs/reference/panel/fields/blocks text: blocks) field and blocks using `preview: fields`.

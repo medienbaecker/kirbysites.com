@@ -1,0 +1,1 @@
+Alt: Screenshot of the Hotel Riesengebirge homepage, showing a beige background with red text and a hero section saying "Tagungen & Hochzeiten vor den Toren Nürnbergs. Das Gute liegt so nah".

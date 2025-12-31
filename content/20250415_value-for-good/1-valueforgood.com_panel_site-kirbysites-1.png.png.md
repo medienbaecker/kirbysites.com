@@ -1,0 +1,1 @@
+Caption: The pages section in the dashboard shows the OG image of each page. The ampersand view button is the (link: https://plugins.getkirby.com/philippoehrlein/typo-and-paste text: Typo and Paste plugin), which allows you to easily insert special characters.

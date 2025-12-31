@@ -1,0 +1,1 @@
+Caption: The images can have different classes, like `full` or `border`. This is explained in an (link: https://getkirby.com/docs/reference/panel/fields/info text: info field) in the sidebar.

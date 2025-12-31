@@ -1,0 +1,1 @@
+Caption: With a (link: https://getkirby.com/docs/reference/system/options/panel#custom-panel-css text: custom Panel CSS) file, the typography of the backend has been adjusted to match the frontend design.

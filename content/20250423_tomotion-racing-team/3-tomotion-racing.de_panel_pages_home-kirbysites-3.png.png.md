@@ -1,0 +1,1 @@
+Caption: In the frontend, this list of events is turned into a subscribable (link: https://en.wikipedia.org/wiki/Webcal text: Webcal calendar).

@@ -1,0 +1,1 @@
+Caption: Custom button using the (link: https://plugins.getkirby.com/bnomei/janitor text: Janitor plugin) to generate CSV and PDF files automatically.

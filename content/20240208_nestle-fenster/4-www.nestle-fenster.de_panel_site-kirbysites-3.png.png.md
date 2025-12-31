@@ -1,0 +1,1 @@
+Caption: As mentioned in the `help`, the (link: https://getkirby.com/docs/reference/panel/fields/checkboxes text: checkboxes) field dynamically gets its options from the product pages using a query.

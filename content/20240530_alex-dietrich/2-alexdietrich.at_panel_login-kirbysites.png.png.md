@@ -1,0 +1,1 @@
+Caption: Using (link: https://getkirby.com/docs/guide/blueprints/layout#columns text: columns) in the Panel, you can recreate the frontend's layout in the backend, making it easier for editors to find the right fields.

@@ -1,0 +1,14 @@
+:root {
+	--focus-outline-color: currentColor;
+	--focus-outline-offset: 0.2rem;
+	--focus-outline-style: solid;
+	--focus-outline-width: 0.2rem;
+}
+
+*:focus-visible {
+	outline-color: var(--focus-outline-color);
+	outline-offset: var(--focus-outline-offset);
+	outline-style: var(--focus-outline-style);
+	outline-width: var(--focus-outline-width);
+	border-radius: var(--border-radius);
+}

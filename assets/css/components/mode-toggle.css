@@ -1,0 +1,20 @@
+.mode-toggle {
+	display: none;
+}
+
+.mode-toggle__icon {
+	display: flex;
+	transition: opacity 0.2s ease;
+}
+
+.mode-toggle__icon--list {
+	display: none;
+}
+
+[data-mode="list"] .mode-toggle__icon--list {
+	display: flex;
+}
+
+[data-mode="list"] .mode-toggle__icon--grid {
+	display: none;
+}

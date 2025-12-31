@@ -1,0 +1,1 @@
+Caption: Each marker has a title, description, images/videos and an optional MP3 audio file.

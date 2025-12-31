@@ -1,0 +1,1 @@
+Caption: Each step in the form has its own blueprint, most of the times with some kind of (link: https://getkirby.com/docs/reference/panel/fields/blocks text: blocks field) to allow for flexible content.

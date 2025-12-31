@@ -1,0 +1,1 @@
+Alt: An example artist page, "Ovrkast." showing a blocks field with a text block, and a sidebar with an "Alumni" toggle, an "Artist image" field, and "Artist card" field and a files section.

@@ -1,0 +1,25 @@
+.skip-to-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-inline: auto;
+	z-index: 10;
+	max-width: fit-content;
+	transform: translateY(-100%);
+	opacity: 0;
+	padding: 0.5rem;
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+
+	/* Transition */
+	@media (prefers-reduced-motion: no-preference) {
+		transition: all 0.25s var(--ease-spring-1);
+		transition-property: transform, opacity;
+	}
+
+	&:focus-visible {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

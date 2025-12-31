@@ -1,0 +1,1 @@
+Caption: Using the (link: https://plugins.getkirby.com/johannschopplich/content-translator text: Content Translator plugin), editors can quickly translate pages using the DeepL API.

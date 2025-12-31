@@ -1,0 +1,19 @@
+/* -------------------------------------------------- */
+/* 🔠 General */
+/* -------------------------------------------------- */
+
+:root {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* -------------------------------------------------- */
+/* 📐 Fluid font sizes */
+/* @link https://utopia.fyi/type/calculator?c=400,14,1.2,1240,16,1.25,2,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* -------------------------------------------------- */
+
+:root {
+	--font-size-s: clamp(0.875rem, 0.8155rem + 0.2381vw, 1rem);
+	--font-size-m: clamp(1.05rem, 0.9548rem + 0.381vw, 1.25rem);
+	--font-size-l: clamp(1.26rem, 1.116rem + 0.5762vw, 1.5625rem);
+}

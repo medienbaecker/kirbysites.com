@@ -1,0 +1,1 @@
+Caption: Using an (link: https://getkirby.com/docs/reference/panel/fields/info text: info field) to show the (link: https://getkirby.com/docs/reference/objects/cms/page/modified text: `modified()`) date in the panel.

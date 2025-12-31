@@ -1,0 +1,1 @@
+Alt: Screenshot of the Rediriger backend showing a subpage of the Outils page, Le protocole de Redirection Écologique

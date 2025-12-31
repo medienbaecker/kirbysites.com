@@ -1,0 +1,1 @@
+Caption: Inside the custom (link: https://getkirby.com/docs/reference/panel/fields/blocks text: blocks), you can see how the (link: https://getkirby.com/docs/reference/panel/fields/writer text: Writer)'s italic style has been adjusted to mark up the highlights.

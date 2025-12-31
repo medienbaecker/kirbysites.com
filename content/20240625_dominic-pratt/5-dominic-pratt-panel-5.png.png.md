@@ -1,0 +1,1 @@
+Caption: Extensive settings for each custom (link: https://getkirby.com/docs/reference/panel/fields/blocks text: block) allow the editor to adjust the layout and style of the content in a separate tab.

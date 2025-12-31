@@ -1,0 +1,1 @@
+Caption: By adding the logo to the (link: https://getkirby.com/docs/reference/system/options/panel/panel-menu text: `panel.menu`) option, and adjusting the pages section's (link: https://getkirby.com/docs/reference/panel/sections/pages#preview-images text: image option) to match the frontend design, the panel provides a cohesive visual experience.

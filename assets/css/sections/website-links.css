@@ -1,0 +1,7 @@
+.website-links {
+	margin-block: var(--spacing-block);
+}
+
+.website-links__item {
+	min-width: 0;
+}

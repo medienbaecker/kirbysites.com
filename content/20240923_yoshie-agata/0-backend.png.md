@@ -1,0 +1,1 @@
+Caption: Using the (link: https://plugins.getkirby.com/johannschopplich/content-translator text: Content Translator plugin), pages can be quickly translated using the DeepL API.

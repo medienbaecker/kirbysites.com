@@ -1,0 +1,1 @@
+Caption: The "Vita" page is completely flexible, using a (link: https://getkirby.com/docs/reference/panel/fields/layout text: layout field) for the content. The blocks are using `preview: fields`.

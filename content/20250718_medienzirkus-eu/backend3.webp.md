@@ -1,0 +1,1 @@
+Alt: Panel interface showing a Kirby CMS page editing screen for "Gründau kann auch anders - digitale Welten und erweiterte Realität" with a two-column layout. Left sidebar contains metadata fields like "Angebot für" and "Details", while the main content area displays three images in a "Galerie" field and an "Infotext" textarea.

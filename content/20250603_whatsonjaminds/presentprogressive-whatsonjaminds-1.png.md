@@ -1,0 +1,1 @@
+Caption: (link: https://getkirby.com/docs/reference/plugins/extensions/blocks text: Custom blocks) with a layout button that let's editors choose the image position.

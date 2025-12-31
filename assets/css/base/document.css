@@ -1,0 +1,44 @@
+/* -------------------------------------------------- */
+/* 🌲 Root */
+/* -------------------------------------------------- */
+
+:root {
+	font: 16px system-ui, sans-serif;
+	scroll-padding-block: calc(var(--spacing-block));
+}
+
+/* -------------------------------------------------- */
+/* 🧍 Body */
+/* -------------------------------------------------- */
+
+body {
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+	font-size: var(--font-size-m);
+}
+
+/* -------------------------------------------------- */
+/* 📖 View transitions */
+/* -------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+	@view-transition {
+		navigation: auto;
+	}
+	::view-transition-group(.screenshot) {
+		animation-duration: 0.25s;
+		animation-timing-function: var(--ease-in-out-3);
+		z-index: 10;
+		opacity: 1;
+	}
+}
+
+/* -------------------------------------------------- */
+/* ✨ Selections */
+/* -------------------------------------------------- */
+
+::selection,
+::target-text {
+	background-color: var(--color-secondary);
+	color: var(--color-primary);
+}

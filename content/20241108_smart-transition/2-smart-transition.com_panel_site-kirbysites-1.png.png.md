@@ -1,0 +1,1 @@
+Caption: After a fixed header, all of the page's content is created in a (link: https://getkirby.com/docs/reference/panel/fields/blocks text: blocks field) with custom blocks using `preview: fields`.

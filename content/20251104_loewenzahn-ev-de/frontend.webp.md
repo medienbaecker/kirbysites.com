@@ -1,0 +1,1 @@
+Alt: Screenshot of the Löwenzahn website with a full-screen image of the building and its surrounding forest in beautiful autumn colours. The website header includes the Löwenzahn logo and a hamburger menu. A big bubble with the text "Gemeinsam lernen und Zukunft gestalten am Rande des Schwarzwalds" is overlaid on the image.

@@ -1,0 +1,1 @@
+Caption: The (link: https://getkirby.com/docs/reference/system/options/panel/panel-menu text: `panel.menu`) option allows adding shortcuts to specific pages in the sidebar.

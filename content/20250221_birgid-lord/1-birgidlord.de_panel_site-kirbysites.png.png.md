@@ -1,0 +1,1 @@
+Caption: Because italic text is used for grey text in the frontend, the italic icon in the (link: https://getkirby.com/docs/reference/panel/fields/textarea text: textarea) has been overwritten with a grey ellipsis icon using an (link: https://getkirby.com/docs/reference/plugins/extensions/icons text: icons extension).

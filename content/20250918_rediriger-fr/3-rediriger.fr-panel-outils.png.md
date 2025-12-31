@@ -1,0 +1,1 @@
+Alt: Screenshot of the Rediriger backend showing the Outils page

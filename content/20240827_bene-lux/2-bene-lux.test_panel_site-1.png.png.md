@@ -1,0 +1,1 @@
+Caption: A (link: https://getkirby.com/docs/reference/panel/fields/range text: range field) can be used to control the opacity of the vignette overlay. Fields have suggestions for editors in the `help` text, be it the length, format or usage.

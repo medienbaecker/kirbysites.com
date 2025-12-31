@@ -1,0 +1,1 @@
+Caption: With a (link: https://getkirby.com/docs/reference/system/options/panel#custom-panel-css text: custom Panel CSS) file, the (link: https://getkirby.com/docs/guide/blueprints/layout#tabs text: tab) style has been adjusted.

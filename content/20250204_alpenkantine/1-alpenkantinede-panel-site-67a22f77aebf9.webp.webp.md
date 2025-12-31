@@ -1,0 +1,1 @@
+Caption: This is the first panel screenshot on kirbysites.com using Kirby 5's (link: https://getkirby.com/releases/5/dark-mode text: dark mode).

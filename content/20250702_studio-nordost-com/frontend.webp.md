@@ -1,0 +1,1 @@
+Alt: Website header with the word "NORDOST" in large black uppercase letters on a light gray background, with small text below saying CREATIVE STUDIO and HELPING FORWARD-THINKING BUSINESSES LEAVE A LASTING IMPRESSION

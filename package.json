@@ -1,0 +1,10 @@
+{
+	"type": "module",
+	"scripts": {
+		"dev": "node --no-deprecation assets/assets.config.js"
+	},
+	"dependencies": {
+		"browser-sync": "*",
+		"esbuild": "*"
+	}
+}

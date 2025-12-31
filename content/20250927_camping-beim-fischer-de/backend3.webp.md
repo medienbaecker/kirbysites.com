@@ -1,0 +1,1 @@
+Alt: Screenshot of the "Wohnen" page in the Panel with a hero section with multiple fields, an apartments section with an info field, a Fragen und Antworten section and a sidebar with options and subpages.

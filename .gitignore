@@ -1,0 +1,11 @@
+.DS_Store
+
+/media
+/site/accounts
+/site/cache
+/site/sessions
+
+/-Daten
+/-Content
+node_modules
+/.vscode/settings.json

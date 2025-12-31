@@ -1,0 +1,1 @@
+Alt: The "Artists" page showing a pages section with artist images, a blocks field and a sidebar with a "Menu color" field and some files in a section.

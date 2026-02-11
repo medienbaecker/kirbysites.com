@@ -1,0 +1,10 @@
+.footer {
+	margin-block: var(--spacing-block-l);
+	font-size: var(--font-size-s);
+	color: var(--color-tertiary);
+}
+
+.footer__inner {
+	display: flex;
+	gap: 1rem;
+}

@@ -10,4 +10,6 @@
 
 </main>
 
+<?php snippet('footer') ?>
+
 <?php snippet('bottom') ?>

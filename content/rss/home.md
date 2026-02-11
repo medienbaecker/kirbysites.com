@@ -4,7 +4,7 @@ Title: Home
 
 Intro:
 
-Beautiful (link: https://getkirby.com/ text: Kirby) websites, front and back.
+Beautiful (link: https://getkirby.com/ text: Kirby) websites, from the back.
 Curated by (link: https://medienbaecker.com text: Thomas Günther)
 
 ----

@@ -6,7 +6,7 @@ use Kirby\CLI\CLI;
 use Kirby\Toolkit\Str;
 
 return [
-	'description' => 'Create a new website page and take a screenshot',
+	'description' => 'Create a new website page',
 	'args' => [],
 	'command' => static function (CLI $cli): void {
 		$cli->out('Enter the website URL:');
@@ -58,22 +58,6 @@ return [
 			$page = $page->publish()->changeNum((int) date('Ymd'));
 
 			$cli->success("Page created: {$page->id()}");
-
-			// Take screenshot
-			$cli->out("Taking screenshot...");
-
-			$result = Screenshot::capture($url, $page->root() . '/frontend.webp', [
-				'delay' => 2000,
-				'quality' => 80,
-				'format' => 'webp',
-				'viewport' => ['width' => 1600, 'height' => 1200]
-			]);
-
-			if ($result['success']) {
-				$cli->success("Done: {$result['filepath']}");
-			} else {
-				$cli->error("Screenshot failed: {$result['error']}");
-			}
 		} catch (Exception $e) {
 			$cli->error($e->getMessage());
 		}

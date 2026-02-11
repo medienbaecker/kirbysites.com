@@ -1,7 +1,6 @@
 <?php
 
 use Kirby\Cms\Url;
-use Kirby\Cms\File;
 
 require_once kirby()->root('models') . '/default.php';
 
@@ -9,19 +8,19 @@ class WebsitePage extends DefaultPage
 {
 
 	/**
-	 * Get the image with the name "frontend"
+	 * Get the first backend image as the preview image
 	 *
 	 * @return Kirby\Cms\File|null
 	 */
-	public function frontendImage()
+	public function previewImage()
 	{
-		return $this->images()->findBy('name', 'frontend');
+		return $this->backendImages()->first();
 	}
 
 	/**
 	 * Get all the images of a page except the one named "frontend"
 	 *
-	 * @return Kirby\Cms\File|null
+	 * @return Kirby\Cms\Files
 	 */
 	public function backendImages()
 	{

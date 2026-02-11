@@ -16,24 +16,12 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
 			if ($website->date()->isEmpty()) continue;
 
-			$frontendImage = $website->frontendImage();
-			$backendImages = $website->backendImages();
-
 			$images = '';
 
-			// Frontend image with caption
-			if ($frontendImage) {
-				$images .= '<img src="' . $frontendImage->url() . '" alt="' . $frontendImage->alt()->or('Frontend screenshot of ' . $website->shortUrl())->html() . '" />';
-				if ($frontendImage->caption()->isNotEmpty()) {
-					$images .= $frontendImage->caption()->kt();
-				}
-			}
-
-			// Backend images with captions
-			foreach ($backendImages as $backendImage) {
-				$images .= '<img src="' . $backendImage->url() . '" alt="' . $backendImage->alt()->or('Backend screenshot of ' . $website->shortUrl())->html() . '" />';
-				if ($backendImage->caption()->isNotEmpty()) {
-					$images .= $backendImage->caption()->kt();
+			foreach ($website->backendImages() as $image) {
+				$images .= '<img src="' . $image->url() . '" alt="' . $image->alt()->or('Panel screenshot of ' . $website->shortUrl())->html() . '" />';
+				if ($image->caption()->isNotEmpty()) {
+					$images .= $image->caption()->kt();
 				}
 			}
 			?>

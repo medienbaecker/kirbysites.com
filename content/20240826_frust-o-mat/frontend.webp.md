@@ -1,1 +1,0 @@
-Caption: The Kirby-powered web app tries to give young people in Eastern Germany a voice for their political frustrations, as an alternative to extremist parties.

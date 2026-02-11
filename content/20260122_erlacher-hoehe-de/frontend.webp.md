@@ -1,1 +1,0 @@
-Alt: Screenshot of the Erlacher Höhe website with a big headline "Aktiv für Menschen. Leben. Würde.", two buttons and a big hero image.

@@ -1,1 +1,0 @@
-Alt: Screenshot of threetimeslouder.com with a huge blue logo saying "three times LOUDER" on top of a video with the subtitle "three times LOUDER is the NYC home to the future of hip-hop."

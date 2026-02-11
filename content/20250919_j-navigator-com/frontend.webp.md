@@ -1,1 +1,0 @@
-Alt: Screenshot of the J-Navi homepage, showing a hero section with the text "J-Navi Your DMC in Asia" and a background image of a Japanese Torii gate in a forest.

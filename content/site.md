@@ -8,6 +8,8 @@ Contribute to the (link: https://github.com/medienbaecker/kirbysites.com text: r
 
 Include the URL, credits, and Panel screenshots with captions explaining interesting features or plugins.
 
+By submitting, you confirm that you hold the rights to all images shown in your screenshots or have obtained the necessary permissions.
+
 Thank you ♥︎
 
 ----

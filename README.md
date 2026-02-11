@@ -10,6 +10,8 @@ Submit your own site by opening a pull request!
 2. Add your site to `content/`
 3. Open a pull request
 
+**Important:** By submitting, you confirm that you hold the rights to all images shown in your screenshots or have obtained the necessary permissions.
+
 ### Folder structure
 
 ```

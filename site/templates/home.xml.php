@@ -18,7 +18,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
 			$images = '';
 
-			foreach ($website->backendImages() as $image) {
+			foreach ($website->images()->sorted() as $image) {
 				$images .= '<img src="' . $image->url() . '" alt="' . $image->alt()->or('Panel screenshot of ' . $website->shortUrl())->html() . '" />';
 				if ($image->caption()->isNotEmpty()) {
 					$images .= $image->caption()->kt();

@@ -17,7 +17,7 @@
 				<ul class="website-list-item__list">
 					<?php
 					$i = 0;
-					foreach ($website->backendImages() as $image): $i++;
+					foreach ($website->images()->sorted() as $image): $i++;
 					?>
 						<a href="<?= $website->url() ?>#screenshot-<?= $i ?>" class="website-list-item__image-wrap" id="<?= $website->uid() ?>-screenshot-<?= $i ?>">
 							<figure class="website-list-item__figure">

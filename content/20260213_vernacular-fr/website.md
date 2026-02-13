@@ -6,7 +6,7 @@ Url: https://vernacular.fr
 
 ----
 
-Text: by (link: https://timothee.goguely.com/ text: Timothée Goguely)
+Text: by (link: https://timothee.goguely.com/ text: Timothée Goguely) and (link: http://gregorycadars.com/ text: Gregory Cadars)
 
 ----
 

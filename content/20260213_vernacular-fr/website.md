@@ -1,0 +1,17 @@
+Title: Jules Vernacular
+
+----
+
+Url: https://vernacular.fr
+
+----
+
+Text: by (link: https://timothee.goguely.com/ text: Timothée Goguely)
+
+----
+
+Date: 2026-02-13 16:23
+
+----
+
+Uuid: 3a8cmhyp80tv4lkc

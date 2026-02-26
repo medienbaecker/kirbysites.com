@@ -1,4 +1,4 @@
-Title: DI.DAY
+Title: Digital Independence Day
 
 ----
 

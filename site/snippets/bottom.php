@@ -1,5 +1,13 @@
 <?php if (option('debug') !== true): ?>
-	<script defer data-domain="kirbysites.com" data-api="https://backofen.link/plausible/api/event" src="https://backofen.link/plausible/js/script.js"></script>
+	<script async src="https://analytics.backofen.link/js/pa-RAp2H8BK8130dvn20giJZ.js"></script>
+	<script>
+		window.plausible = window.plausible || function() {
+			(plausible.q = plausible.q || []).push(arguments)
+		}, plausible.init = plausible.init || function(i) {
+			plausible.o = i || {}
+		};
+		plausible.init()
+	</script>
 <?php endif ?>
 
 <?= js(array(

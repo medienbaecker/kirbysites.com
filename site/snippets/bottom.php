@@ -1,5 +1,5 @@
 <?php if (option('debug') !== true): ?>
-	<script async src="https://analytics.backofen.link/js/pa-RAp2H8BK8130dvn20giJZ.js"></script>
+	<script async src="https://a.backofen.link/js/pa-RAp2H8BK8130dvn20giJZ.js"></script>
 	<script>
 		window.plausible = window.plausible || function() {
 			(plausible.q = plausible.q || []).push(arguments)

@@ -35,7 +35,7 @@ return [
 				];
 
 				if ($path === 'rss.xml') {
-					go($base . '/feed.rss', 301);
+					go($base . '/feed.xml', 301);
 				}
 
 				$page = $path !== '' ? page($path) : null;
